@@ -1,0 +1,18 @@
+.show-component{
+    display: block;
+}
+.hide-component{
+    display: none;
+}
+
+#output p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.red-text{
+    color: red;
+}
+.green-text{
+    color: green;
+}

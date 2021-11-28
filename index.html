@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="width: 50%;margin: auto;">
+        <div id="form-input" style="border:2px solid blue;padding: 20px;">
+            <h2><u>Form Input</u></h2>
+            <div>
+                <label>Nama :</label>
+                <input id="name"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Lama :</label>
+                <input id="lama" type="number"/>
+                <label>Hari</label>
+            </div>
+            <br/>
+            <div>
+                <label>Kode Booking : </label>
+                <select id="kode_booking">
+                    <option value=""></option>
+                    <option value="AL02102">AL02102</option>
+                    <option value="BG03025">BG03025</option>
+                    <option value="CR02111">CR02111</option>
+                    <option value="KM03075">KM03075</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label>Jumlah</label>
+                <input id="jumlah" type="number"/>
+                <label>orang</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <label>Jenis pembayaran : </label>
+                <select id="payment">
+                    <option></option>
+                    <option value="Kartu kredit">Kartu kredit</option>
+                    <option value="Debit">Debit</option>
+                    <option value="Cash">Cash</option>
+                </select>
+            </div>
+            <br/>
+            <button id="process">Process</button>
+            <button id="hapus">Hapus</button>
+        </div>
+        <br/>
+        <div class="hide-component" id="output" style="border:2px solid blue;padding: 20px;">
+            <h2><u>Output</u></h2>
+            <div style="text-align: center;">
+                <h2>FLORENSIA HOTEL</h2>
+            </div>
+            <div style="display:flex;gap:20px">
+                <div style="width: 50%;">
+                    <div style="display:flex;">
+                        <p style="width:150px">Nama</p>
+                        <p>: </p>
+                        <p id="result_name"></p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:150px">Nama Kamar</p>
+                        <p>: </p>
+                        <p id="result_room_name"></p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:150px">Nomor</p>
+                        <p>: </p>
+                        <p id="result_room_number"></p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:150px">Lama</p>
+                        <p>: </p>
+                        <p > <span id="result_lama"></span> hari</p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:150px">Potongan / Tambahan</p>
+                        <p>: </p>
+                        <p id="result_potongan_tambahan"></p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:150px">Total Biaya seluruhnya</p>
+                        <p>: </p>
+                        <p>Rp <span id="result_total"></span></p>
+                    </div>
+                </div>
+                <div style="width: 50%;">
+                    <div style="display:flex;">
+                        <p style="width:200px">Kode Booking</p>
+                        <p>: </p>
+                        <p id="result_kode_booking"> </p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:200px">Lantai</p>
+                        <p>: </p>
+                        <p id="result_lantai"></p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:200px">Jumlah</p>
+                        <p>: </p>
+                        <p ><span id="result_jumlah"></span> Orang</p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:200px">Jenis Pembayaran</p>
+                        <p>: </p>
+                        <p id="result_payment"> </p>
+                    </div>
+                    <div style="display:flex;">
+                        <p style="width:200px">Biaya Spring Bad Tambahan</p>
+                        <p>: </p>
+                        <p id="result_springbed"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
